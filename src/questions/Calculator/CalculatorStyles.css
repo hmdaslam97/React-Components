@@ -1,0 +1,145 @@
+ /* board:#37373F button:#EEF1F8 red:#D71A16 blue:#151E5F font:#2B2C2E displayLetter:#09160C*/
+ :root{
+    --board:#37373F;
+    --button:#EEF1F8;
+    --red:#D71A16;
+    --blue:rgb(19, 19, 247);
+    --display:#a8aea4;
+ }
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace; 
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.container{
+    border: 2px solid grey;
+    background-color: var(--board);
+    z-index: 2px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 60%;
+    height: 550px;
+    box-shadow: 6px 2px 3px grey;
+}
+
+.board{
+    background-color: var(--display);   
+    font-size: 30px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 1px grey inset;
+}
+
+.typelist{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.typelist>p:first-child{
+    width: 98%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding-right: 2px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.buttons>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.row1>button,.buttons>div>button:last-child{
+    color:var(--button);
+}
+
+button{
+    width: 20%;
+    height: 70px;
+    border-radius: 20px;
+    background-color: var(--button);
+    font-size: 40px;
+    font-family: bold;
+    box-shadow:4px 4px 1px rgb(148, 164, 171), 5px 5px 2px lightblue inset;
+    border: none;
+}
+button.reddish{
+    background-color: var(--red);
+    box-shadow:3px 3px 1px rgb(143, 32, 32), 5px 5px 2px rgb(255, 19, 19) inset;
+}
+
+button.bluish{
+    background-color: var(--blue);
+    box-shadow:3px 3px 2px rgb(30, 30, 173), 5px 5px 2px rgb(67, 67, 251) inset;
+}
+
+button:active{
+    box-shadow: 2px 2px 1px rgb(99, 142, 161),3px 3px 2px lightblue inset;
+}
+button.reddish:active{
+    background-color: var(--red);
+    box-shadow: 1px 1px 1px rgb(143, 32, 32), 3px 3px 2px rgb(255, 19, 19) inset;
+}
+button.bluish:active{
+    background-color: var(--blue);
+    box-shadow:1px 1px 1px rgb(30, 30, 173), 3px 3px 2px rgb(67, 67, 251) inset;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width:600px){
+    .main{margin-top: 5px;}
+    .container{
+        height: 450px;
+    }
+    .board{
+        font-size: 20px;
+        height:70px;
+    }
+    .buttons{
+        height: 380px;
+    }
+    button{
+        width: 20%;
+        height: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
