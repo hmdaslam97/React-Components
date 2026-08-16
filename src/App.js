@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import SetTimeout from "./JsMethods/SetTimeout";
-// import Todos from "./questions/Todos";
+import Todos from "./questions/Todos";
 // import Dropdown from './questions/Dropdown.js'
 import {CheckBox} from './questions/CheckBox.js'
 import Test from './questions/Test.js'
@@ -24,12 +24,13 @@ import UseMemo from "./questions/Hooks/UseMemo/UseMemo.js";
 import Debouncing from "./questions/Custom Hooks/Debouncing.js";
 import Throttling from "./questions/Custom Hooks/Throttling.js";
 import Accordion from "./UI question/accordion/Accordion.js";
+import GraphQLClient from "./questions/GraphQL/GraphQLClient.js";
 
 const App = () => {
   return (
   //<Question/>
     // <Main/>
-  //<Test/>
+  // <Test/>
   // <DataFromFile/>
   //  <SetTimeout/>
   // <LanguageInputs/>
@@ -48,10 +49,7 @@ const App = () => {
   // <GetPreviousCount/>
     // <CalculatingWidth/>
     // <Main/>
-    // <UseMemo data={[1,2,9]}/>
-  //<Debouncing/>
-  //<Throttling/>
-  <Accordion />
+  <GraphQLClient/>
   );
 };
 
