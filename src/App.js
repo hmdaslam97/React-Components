@@ -23,7 +23,10 @@ import DataFromFile from "./questions/API calling/DataFromFile.js";
 import UseMemo from "./questions/Hooks/UseMemo/UseMemo.js";
 import Debouncing from "./questions/Custom Hooks/Debouncing.js";
 import Throttling from "./questions/Custom Hooks/Throttling.js";
-import Accordion from "./UI question/accordion/Accordion.js";
+import AccordionUtilization from "./questions/UI Components/accordion/AccordionUtilization.js";
+import Accordion from "./UI question/Accordion/Accordion.js";
+import HolyGrail from "./UI question/HolyGrailLayout/HolyGrail.js";
+import ReduxMain from "./redux/ReduxMain.js";
 
 const App = () => {
   return (
@@ -39,7 +42,7 @@ const App = () => {
   // <PrintWhenInputStop/>
   // <RenderStringAsHtml/>
   // <Pagination/>
-  // <UseCallback/>
+   <UseCallback/>
   // <Loader/>
   // <GoogleMap/>
   // <Page1/> //HOC
@@ -48,10 +51,13 @@ const App = () => {
   // <GetPreviousCount/>
     // <CalculatingWidth/>
     // <Main/>
-    // <UseMemo data={[1,2,9]}/>
+    // <UseMemo data={[1,2,10]}/>
   //<Debouncing/>
   //<Throttling/>
-  <Accordion />
+  //<AccordionUtilization />
+  //<Accordion/>
+  //<HolyGrail/>
+  //<ReduxMain />
   );
 };
 

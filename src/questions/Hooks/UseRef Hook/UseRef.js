@@ -5,16 +5,23 @@ function UseRef() {
     let [state,setState]=useState(0)
 
     let myRefForFocus=useRef(null)
+
     useEffect(()=>{
+        setTimeout(()=>{
+          console.log("inside useeffect update")
+        }, 1000)
         myRefForFocus.current.focus() //input field will start blinking and active upon component mount check DOM
-    },[])
+      return ()=>{
+        console.log("Unmounted")
+      }
+    },[state])
   return (
     <div>
       {/* will not rerendered on screen but performs operation directly to DOM  */}
       <h1>Ref count is {count.current}</h1>
-      <button onClick={()=>{count.current++}}>inc</button>
+      <button onClick={()=>{count.current++}}>inc ref</button>
       <h1>State count is {state}</h1>
-      <button onClick={()=>{ setState(state+1)}}>inc</button>
+      <button onClick={()=>{ setState(state+1)}}>inc state</button>
 
       {/* demonstrates when component is rendered this input field gets focussed */}
       <input type="text" ref={myRefForFocus}/>
