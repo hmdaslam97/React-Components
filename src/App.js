@@ -27,6 +27,7 @@ import AccordionUtilization from "./questions/UI Components/accordion/AccordionU
 import Accordion from "./UI question/Accordion/Accordion.js";
 import HolyGrail from "./UI question/HolyGrailLayout/HolyGrail.js";
 import ReduxMain from "./redux/ReduxMain.js";
+import DebouncedSearch from "./LLD/DebouncedSearch.js";
 
 const App = () => {
   return (
@@ -42,7 +43,7 @@ const App = () => {
   // <PrintWhenInputStop/>
   // <RenderStringAsHtml/>
   // <Pagination/>
-   <UseCallback/>
+  // <UseCallback/>
   // <Loader/>
   // <GoogleMap/>
   // <Page1/> //HOC
@@ -58,6 +59,7 @@ const App = () => {
   //<Accordion/>
   //<HolyGrail/>
   //<ReduxMain />
+  <DebouncedSearch/>
   );
 };
 
