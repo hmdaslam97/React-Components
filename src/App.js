@@ -23,15 +23,10 @@ import DataFromFile from "./questions/API calling/DataFromFile.js";
 import UseMemo from "./questions/Hooks/UseMemo/UseMemo.js";
 import Debouncing from "./questions/Custom Hooks/Debouncing.js";
 import Throttling from "./questions/Custom Hooks/Throttling.js";
-<<<<<<< HEAD
 import AccordionUtilization from "./questions/UI Components/accordion/AccordionUtilization.js";
 import Accordion from "./UI question/Accordion/Accordion.js";
 import HolyGrail from "./UI question/HolyGrailLayout/HolyGrail.js";
 import ReduxMain from "./redux/ReduxMain.js";
-=======
-import Accordion from "./UI question/accordion/Accordion.js";
-import GraphQLClient from "./questions/GraphQL/GraphQLClient.js";
->>>>>>> e1753ff320d586a049fdd58133e6e1621e5ad043
 
 const App = () => {
   return (
