@@ -8,6 +8,9 @@ export default function DebouncedSearch() {
   const [error, setError] = useState(null);
 
   const handleInputChange = (value) => {
+    if(!value.trimEnd()){
+      setError(null)
+    }
     setSearching(true);
     setInputText(prev=> value);
   };
@@ -51,7 +54,7 @@ export default function DebouncedSearch() {
     <h1>Welcome to Debounced Dictionary Search </h1>
 
     <div style={{ width: "300px", margin: "5px"}}>
-      <input type="text" placeholder="Search for a meaning..." value={inputText} onChange={(e) => handleInputChange(e.target.value)} />
+      <input type="text" placeholder="Search for a meaning..." value={inputText} onChange={(e) => handleInputChange(e.target.value)} aria-placeholder="Search for a meaning..." aria-label={inputText} autoFocus />
       {searching && <span>&#x1F50D; Searching...</span>}
     </div>
 

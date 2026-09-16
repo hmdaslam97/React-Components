@@ -28,6 +28,7 @@ import Accordion from "./UI question/Accordion/Accordion.js";
 import HolyGrail from "./UI question/HolyGrailLayout/HolyGrail.js";
 import ReduxMain from "./redux/ReduxMain.js";
 import DebouncedSearch from "./LLD/DebouncedSearch.js";
+import InfiniteScrolling from "./LLD/InfiniteScrolling.js";
 
 const App = () => {
   return (
@@ -59,7 +60,8 @@ const App = () => {
   //<Accordion/>
   //<HolyGrail/>
   //<ReduxMain />
-  <DebouncedSearch/>
+  //<DebouncedSearch/>
+  <InfiniteScrolling/>
   );
 };
 
