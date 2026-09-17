@@ -6,3 +6,15 @@
 ul{
   list-style: none;
 }
+
+.table-header {
+  padding: 8px;
+  background-color: #f2f2f2;
+  text-align: left;
+}
+.table-cell {
+  padding-left: 8px;
+}
+.filter-icon{
+  margin-left: 5px;
+}
