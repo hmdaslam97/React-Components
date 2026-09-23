@@ -30,6 +30,7 @@ import ReduxMain from "./redux/ReduxMain.js";
 import DebouncedSearch from "./LLD/DebouncedSearch.js";
 import InfiniteScrolling from "./LLD/InfiniteScrolling.js";
 import CustomTable from "./LLD/CustomTable.js";
+import FileDrop from "./LLD/Drag&Drop/FileDrop.js";
 
 const App = () => {
   return (
@@ -63,7 +64,8 @@ const App = () => {
   //<ReduxMain />
   //<DebouncedSearch/>
   //<InfiniteScrolling/>
-  <CustomTable/>
+  //<CustomTable/>
+  <FileDrop />
   );
 };
 
